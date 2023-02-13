@@ -1,10 +1,13 @@
 .app {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #152025;
+    color: #fff;
 }
 
 .content {
-    --offset: cal(var(--footer-height)+var(--logo-height));
-    min-height: calc(100vh - var(--offset));
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;

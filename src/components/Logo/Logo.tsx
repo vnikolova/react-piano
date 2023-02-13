@@ -2,10 +2,9 @@ import styles from "./Logo.module.css";
 
 export const Logo = () => {
   return (
-    <h1 className={styles.logo}>
-      <span role="img" aria-label="metal hand emoji">
-        🤘
-      </span>
-    </h1>
+    <div className={styles.wrapper}>
+      <img src="/logo.png" alt="logo" className={styles.logo} />
+      <h1 className={styles.heading}>| React piano</h1>
+    </div>
   );
 };

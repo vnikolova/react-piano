@@ -1,8 +1,17 @@
-.logo {
-    font-size: 5rem;
-    text-align: center;
+.heading {
+    font-size: 1.5rem;
     line-height: var(--logo-height);
     height: var(--logo-height);
+
+}
+
+.wrapper {
     margin: 0;
-    padding-top: 30px;
+    padding: 16px 0 0 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    height: var(--logo-height)
 }

@@ -6,6 +6,7 @@ import { usePressObserver } from "../PressObserver";
 
 type KeyProps = {
   type: NoteType;
+  pitch: string;
   label: string;
   disabled: boolean;
   onUp: PressCallback;
@@ -17,6 +18,7 @@ type PressCallback = () => void;
 export const Key: FunctionComponent<KeyProps> = ({
   type,
   label,
+  pitch,
   onDown,
   onUp,
   ...rest
@@ -26,6 +28,8 @@ export const Key: FunctionComponent<KeyProps> = ({
     onStartPress: onDown,
     onFinishPress: onUp,
   });
+
+  console.log(pressed);
 
   return (
     <button
@@ -39,7 +43,10 @@ export const Key: FunctionComponent<KeyProps> = ({
       onMouseUp={onUp}
       {...rest}
     >
-      {label}
+      <div className={styles.label}>
+        <span>{pitch}</span>
+        <span>{label}</span>
+      </div>
     </button>
   );
 };

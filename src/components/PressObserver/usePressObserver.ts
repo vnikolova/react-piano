@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Key as KeyLabel } from "../../domain/keyboard";
 
-type IsPressed = any;
+type IsPressed = boolean;
 type eventCode = string;
 type CallbackFunction = () => void;
 
@@ -47,4 +47,6 @@ export function usePressObserver({
       document.removeEventListener("keyup", handlePressFinish);
     };
   }, [watchKey, pressed, setPressed, onStartPress, onFinishPress]);
+
+  return pressed;
 }

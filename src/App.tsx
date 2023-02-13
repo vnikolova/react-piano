@@ -7,7 +7,9 @@ export function App() {
   return (
     <div className={styles.app}>
       <Logo />
-      <Main />
+      <div className={styles.content}>
+        <Main />
+      </div>
       <Footer />
     </div>
   );

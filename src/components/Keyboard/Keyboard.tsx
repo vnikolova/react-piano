@@ -1,6 +1,7 @@
 import { selectKey } from "../../domain/keyboard";
 import { MidiValue, notes } from "../../domain/note";
 import { Key } from "../Key";
+
 import styles from "./Keyboard.module.css";
 
 export type KeyboardProps = {
@@ -12,7 +13,7 @@ export type KeyboardProps = {
 export const Keyboard = ({ loading, play, stop }: KeyboardProps) => {
   return (
     <div className={styles.keyboard}>
-      {notes.map(({ midi, type, index, octave }) => {
+      {notes.map(({ midi, type, index, octave, pitch }) => {
         const label = selectKey(octave, index);
         return (
           <Key
@@ -20,6 +21,7 @@ export const Keyboard = ({ loading, play, stop }: KeyboardProps) => {
             key={midi}
             type={type}
             label={label}
+            pitch={pitch}
             onDown={() => play(midi)}
             onUp={() => stop(midi)}
           ></Key>
