@@ -29,8 +29,6 @@ export const Key: FunctionComponent<KeyProps> = ({
     onFinishPress: onUp,
   });
 
-  console.log(pressed);
-
   return (
     <button
       className={clsx(
@@ -40,6 +38,8 @@ export const Key: FunctionComponent<KeyProps> = ({
       )}
       type="button"
       onMouseDown={onDown}
+      onTouchStart={onDown}
+      onTouchEnd={onUp}
       onMouseUp={onUp}
       {...rest}
     >
