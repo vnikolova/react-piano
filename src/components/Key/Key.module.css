@@ -1,12 +1,17 @@
 .key {
     --radius: 2px;
     --font-size: 0.6rem;
-    --white-key-width: 20px;
-    --white-key-height: calc(var(--white-key-width) * 4,57);
+    --white-key-width: 50px;
+    --white-key-height: 228px;
+    --white-key-padding: 410px;
+    --black-key-width: 162px;
+    --black-key-height: 231px;
+    --black-key-padding: 154px;
+    /* --white-key-height: calc(var(--white-key-width) * 4,57);
     --white-key-padding: calc(var(--white-key-height) / 1.28);
     --black-key-width: calc(var(--white-key-width) / 1.6);
     --black-key-height: calc(var(--white-key-height) / 1.77);
-    --black-key-padding: calc(var(--black-key-height) / 1.5);
+    --black-key-padding: calc(var(--black-key-height) / 1.5); */
 }
 
 
@@ -71,6 +76,11 @@
 @media (min-width: 380px) {
     .key {
         --white-key-width: 25px;
+        --white-key-height: 115px;
+        --white-key-padding: 89px;
+        --black-key-width: 15px;
+        --black-key-height: 115px;
+        --black-key-padding: 75px;
         --radius: 5px;
         --font-size: 0.8rem;
     }
@@ -79,6 +89,11 @@
 @media (min-width: 540px) {
     .key {
         --white-key-width: 35px;
+        --white-key-height: 137px;
+        --white-key-padding: 107px;
+        --black-key-width: 21px;
+        --black-key-height: 77px;
+        --black-key-padding: 51px;
         --font-size: 1rem;
     }
 }
@@ -86,6 +101,11 @@
 @media (min-width: 720px) {
     .key {
         --white-key-width: 45px;
+        --white-key-height: 205px;
+        --white-key-padding: 160px;
+        --black-key-width: 28px;
+        --black-key-height: 115px;
+        --black-key-padding: 77px;
         --font-size: 1.2rem;
     }
 }
@@ -93,6 +113,11 @@
 @media (min-width: 960px) {
     .key {
         --white-key-width: 65px;
+        --white-key-height: 297px;
+        --white-key-padding: 232px;
+        --black-key-width: 40px;
+        --black-key-height: 167px;
+        --black-key-padding: 111px;
         --font-size: 1.5rem;
     }
 }
@@ -100,6 +125,11 @@
 @media (min-width: 1120px) {
     .key {
         --white-key-width: 75px;
+        --white-key-height: 342px;
+        --white-key-padding: 267px;
+        --black-key-width: 46px;
+        --black-key-height: 193px;
+        --black-key-padding: 128px;
         --font-size: 1.8rem;
     }
 }

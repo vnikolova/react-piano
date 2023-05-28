@@ -7,12 +7,10 @@ export const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      {currentYear} <FontAwesomeIcon icon={regular("copyright")} />
-      &nbsp;Made with&nbsp;
-      <FontAwesomeIcon icon={solid("heart")} /> by
-      <a href="https://viknikolova.com" target="_blank" rel="noreferrer">
-        {" "}
-        Vik{" "}
+      {currentYear} <FontAwesomeIcon icon={regular("copyright")} />&nbsp;
+      Designed and developed by&nbsp;
+      <a href="https://viknikolova.com" target="_blank" rel="noreferrer" className={styles.link}>
+        Vik
       </a>
       <br />
     </footer>
