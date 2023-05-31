@@ -136,13 +136,17 @@
 
 .label {
     display: flex;
- flex-direction: column;  
+ flex-direction: column;
+ font-size: 1rem; 
 }
 
 .label span:nth-child(1) {
     font-weight: 600;
 }
+.labelKeyboard {
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 0 20%;
+    padding: 8px;
 
-.label span:nth-child(2) {
-    font-size: 1.2rem;
 }

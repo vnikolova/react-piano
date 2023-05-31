@@ -4,7 +4,7 @@ export const Logo = () => {
   return (
     <div className={styles.wrapper}>
       <img src="/logo.png" alt="logo" className={styles.logo} />
-      <h1 className={styles.heading}>| React piano</h1>
+      <h1 className={styles.heading}>| Virtual Piano</h1>
     </div>
   );
 };

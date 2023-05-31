@@ -45,7 +45,7 @@ export const Key: FunctionComponent<KeyProps> = ({
     >
       <div className={styles.label}>
         <span>{pitch}</span>
-        <span>{label}</span>
+        <span className={styles.labelKeyboard}>{label}</span>
       </div>
     </button>
   );
