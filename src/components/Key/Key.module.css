@@ -79,10 +79,13 @@
         --white-key-height: 115px;
         --white-key-padding: 89px;
         --black-key-width: 15px;
-        --black-key-height: 115px;
-        --black-key-padding: 75px;
+        --black-key-height: 85px;
+        --black-key-padding: 65px;
         --radius: 5px;
         --font-size: 0.8rem;
+    }
+    .labelKeyboard {
+        visibility: hidden;
     }
 }
 
@@ -96,17 +99,24 @@
         --black-key-padding: 51px;
         --font-size: 1rem;
     }
+
+    .labelKeyboard {
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 720px) {
     .key {
-        --white-key-width: 45px;
-        --white-key-height: 205px;
+        --white-key-width: 55px;
+        --white-key-height: 225px;
         --white-key-padding: 160px;
-        --black-key-width: 28px;
-        --black-key-height: 115px;
+        --black-key-width: 35px;
+        --black-key-height: 135px;
         --black-key-padding: 77px;
         --font-size: 1.2rem;
+    }
+    .labelKeyboard {
+        visibility: visible;
     }
 }
 
@@ -120,6 +130,9 @@
         --black-key-padding: 111px;
         --font-size: 1.5rem;
     }
+    .labelKeyboard {
+        visibility: visible;
+    }
 }
 
 @media (min-width: 1120px) {
@@ -131,6 +144,10 @@
         --black-key-height: 193px;
         --black-key-padding: 128px;
         --font-size: 1.8rem;
+    }
+
+    .labelKeyboard {
+        visibility: visible;
     }
 }
 
@@ -148,5 +165,4 @@
     border-radius: 8px;
     margin: 0 20%;
     padding: 8px;
-
 }

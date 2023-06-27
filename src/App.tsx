@@ -6,10 +6,11 @@ import { ChakraBaseProvider, extendBaseTheme } from '@chakra-ui/react'
 // `@chakra-ui/theme` is a part of the base install with `@chakra-ui/react`
 import chakraTheme from '@chakra-ui/theme'
 
-const { Button, Select, FormLabel } = chakraTheme.components
+const { Button, Select, FormLabel, Alert } = chakraTheme.components
 
 const theme = extendBaseTheme({
   components: {
+    Alert,
     Button,
     Select,
     FormLabel  },
