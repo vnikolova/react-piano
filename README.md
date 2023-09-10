@@ -1,6 +1,6 @@
 # react-piano
-![](https://img.shields.io/badge/demo-online-brightgreen?link=https%3A%2F%2Fpiano.viknikolova.com%2F
-)
+[![Badge](https://img.shields.io/badge/demo-online-brightgreen?link=https%3A%2F%2Fpiano.viknikolova.com%2F)](https://piano.viknikolova.com)
+
 
 This is a virtual piano built with React and Typescript and powered by [soundfont-player](https://www.npmjs.com/package/soundfont-player). 
 
